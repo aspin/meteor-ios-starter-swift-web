@@ -1,16 +1,5 @@
-# Meteor Starter Kit
-Directed questions or comments to me.
+# Meteor-iOS-Swift Boilerplate
 
-### Adding Meteor libraries
+Created by Kevin Chen, 2015.
 
-Search [Atmosphere](https://atmospherejs.com/) for relevant packages.
-
-Bootstrap
-```
-meteor add mizzao:bootstrap-3
-```
-
-Router
-```
-meteor add iron:router
-```
+This is an example server for communication with an [ObjectiveDDP](https://github.com/boundsj/ObjectiveDDP) enabled iOS application. The [corresponding example](http://google.com) is written in Swift, though obviously Objective-C is also usable.
