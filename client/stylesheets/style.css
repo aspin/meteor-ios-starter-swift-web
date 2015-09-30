@@ -3,9 +3,10 @@ main {
   padding: 10%;
 }
 
-.center-block {
+#messages {
+  text-align: left;
   margin-top: 20px;
-  width: 700px;
+  width: 600px;
 }
 
 .form-control {

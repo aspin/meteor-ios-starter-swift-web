@@ -1,9 +1,10 @@
 <template name="view">
 
-  <main>
-    <form class="center-block">
-      <input name="message" type="text" class="form-control">
-      <button class="btn btn-default btn-danger">Reset</button>
+  <main class="text-center">
+    <h3>Send messages back and forth with the iOS client: </h3>
+    <form>
+      <input name="message" type="text" class="form-control" autocomplete="off">
+      <button class="btn btn-default btn-danger" type="button">Reset</button>
       <button class="btn btn-default btn-success" type="submit">Send!</button>
     </form>
     <div id="messages" class="center-block">

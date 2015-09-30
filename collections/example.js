@@ -1,1 +1,1 @@
-CoolKidsCollection = new Mongo.Collection('cool_kids_collection');
+Example = new Mongo.Collection('Example'); 
