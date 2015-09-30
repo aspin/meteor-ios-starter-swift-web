@@ -1,7 +1,14 @@
-/*
+main {
+  height: 100vh;
+  padding: 10%;
+}
 
-    ADD IN CSS DECLARATIONS HERE.
+.center-block {
+  margin-top: 20px;
+  width: 700px;
+}
 
-    Rename and reorganize these files as you see fit.
-
-*/
+.form-control {
+  width: 400px;
+  display: inline-block;
+}

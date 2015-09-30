@@ -1,15 +1,17 @@
 <template name="view">
 
-<button class="btn btn-default btn-danger">Reset</button>
-<form>
-  <input name="message" type="text">
-  <button class="btn btn-default btn-success" type="submit">Send!</button>
-</form>
-<div id="messages">
-{{#each messages}}
-<strong>{{sender}}:</strong> {{content}}
-<br/>
-{{/each}}
-</div>
-  
+  <main>
+    <form class="center-block">
+      <input name="message" type="text" class="form-control">
+      <button class="btn btn-default btn-danger">Reset</button>
+      <button class="btn btn-default btn-success" type="submit">Send!</button>
+    </form>
+    <div id="messages" class="center-block">
+      {{#each messages}}
+        <strong>{{sender}}:</strong> {{content}}
+        <br/>
+      {{/each}}
+    </div>
+  </main>
+
 </template>

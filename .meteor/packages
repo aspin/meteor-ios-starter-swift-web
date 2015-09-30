@@ -6,7 +6,6 @@
 
 autopublish
 insecure
-mizzao:bootstrap-3
 iron:router
 standard-minifiers
 meteor-base
@@ -22,3 +21,4 @@ random
 ejson
 spacebars
 check
+twbs:bootstrap
