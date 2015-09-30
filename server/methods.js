@@ -12,5 +12,8 @@ Meteor.methods({
         console.log('PING!');
         console.log(arg);
         return 'PONG!';
+    },
+    clearMessages: function() {
+        Messages.remove({});
     }
 });

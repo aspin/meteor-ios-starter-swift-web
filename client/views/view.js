@@ -1,11 +1,24 @@
-/* 
+Template.view.helpers({
+    messages: function () {
+        return Messages.find();
+    }
+});
 
-    ADD IN JAVASCRIPT CODE HERE.
+Template.view.rendered = function () {
 
-    Rename and reorder these pages as necessary.
-
-*/
-
-Template.firstView.rendered = function () {
-    // add javascript to be executed when the template first_view is rendered
 };
+
+Template.view.events({
+    'submit form': function (e) {
+        e.preventDefault();
+        var message = e.target.message.value;
+        var sender = 'Kevin';
+        Messages.insert({ content: message, sender: sender});
+        e.target.reset()
+    },
+    'click .btn-danger': function (e) {
+        if (confirm('Delete all messages?')) {
+            Meteor.call('clearMessages');
+        }
+    }
+});

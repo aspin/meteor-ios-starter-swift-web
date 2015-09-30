@@ -1,5 +1,15 @@
-<template name="firstView">
+<template name="view">
 
-  <!-- RENAME/REORGANIZE THESE FILE AND ADD PAGE INFORMATION -->
+<button class="btn btn-default btn-danger">Reset</button>
+<form>
+  <input name="message" type="text">
+  <button class="btn btn-default btn-success" type="submit">Send!</button>
+</form>
+<div id="messages">
+{{#each messages}}
+<strong>{{sender}}:</strong> {{content}}
+<br/>
+{{/each}}
+</div>
   
 </template>
